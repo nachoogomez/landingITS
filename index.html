@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS Cipolletti</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="header-container">
+                <a href="./index.html"><img src="./assets/img/cropped-logoITSpara-Web-1-300x150-removebg-preview.png" alt="Logo its"></a>
+                <div class="navbar">  
+                    <ul class="navbar-list">
+                        <li><a href="#about-us">Sobre Nosotros</a></li>
+                        <div class="dropdown">
+                            <button onclick="dropdownToggle()" class="dropbtn">Carreras <i class="fa-solid fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="https://itscipolletti.edu.ar/tsd-devops/" target="_blank">DevOps</a>
+                              <a href="https://itscipolletti.edu.ar/tsdsfs-full-stack-developer/" target="_blank">Desarrollador Full-Stack</a>
+                              <a href="https://itscipolletti.edu.ar/tssiti/" target="_blank">Sys Admin</a>
+                            </div>
+                          </div>
+                        <li><a href="./login.html" class="login-phone">Contactanos</a></li>
+                        <li><a href="https://itscipolletti.edu.ar/moodle/" class="campus-mobile" target="_blank">Campus Virtual</a></li>
+                    </ul>
+                </div>
+                <div class="btn-nav">
+                    <a href="https://itscipolletti.edu.ar/moodle/" class="campus" target="_blank">Campus Virtual</a>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>  
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="bg-image"></div>
+            <div class="hero-text">
+                    <h1>ITS Cipolletti</h1>
+                    <p>Formando profesionales en tecnología</p>
+                    <a href="#about-us" class="btn">Inscribite 2025</a>
+            </div>
+        </section>
+        <section id="about-us">
+            <h2>Sobre nosotros</h2>
+            <p>El Instituto de Tecnología Superior Cipolletti es una institución educativa que se dedica a la formación de profesionales en tecnología. Nuestros alumnos se destacan por su capacidad de adaptación y resolución de problemas.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="./assets/img/sys.png" alt="sys admin">
+                    <h3>Sys Admin</h3>
+                    <p>Instala y administra los servidores, instala y mantiene la infraestructura de red</p>
+                    <a href="#">Conoce mas</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/fullstackpng.png" alt="full stack">
+                    <h3>Desarrollo Fullstack</h3>
+                    <p>Planear, diseñar, implementar, y mantener sitios web y aplicaciones web.</p>
+                    <a href="#">Conoce mas</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/devops.png" alt="devops">
+                    <h3>Devops</h3>
+                    <p>Administra sistemas, como el aprovisionamiento y la gestión de servidores</p>
+                    <a href="#">Conoce mas</a>
+                </div>
+            </div>    
+        </section>
+        <section id="contact">
+            <h2>Contactanos</h2>
+            <div class="map-section">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d960.8416917170472!2d-67.97447424685585!3d-38.928743784112065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a318682b15b5b%3A0xc7d0aae60bce877c!2sINSTITUTO%20T%C3%89CNICO%20SUPERIOR%20CIPOLLETTI!5e1!3m2!1ses!2sar!4v1725663168591!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="info-card">
+                    <div class="info">
+                        <h3>Direccion</h3>
+                        <p>Perú y Río Salado, Cipolletti</p>
+                    </div>
+                    <div class="info">
+                        <h3>EMAIL</h3>
+                        <p><a href="mailto:example@email.com">itsejemplo@email.com</a></p>
+                    </div>
+                    <div class="info">
+                        <h3>Telefono</h3>
+                        <p>123-456-7890</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+                <div class="footer-info">
+                    <h3>ITS Cipolletti</h3>
+                    <p>Hecho por Ignacio Gomez</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/itscipolletti" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/itscipolletti/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/its-cipolletti/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                </div>    
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
