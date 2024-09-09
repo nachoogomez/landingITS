@@ -274,6 +274,7 @@ main{
   font-size: 2.5rem;
   font-weight: 900;
   color: var(--text-back);
+  text-align: center;
 }
 
 #about-us p{
@@ -400,6 +401,11 @@ main{
     font-weight: 800;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
 /* Footer */
 
 #footer{
@@ -501,7 +507,7 @@ main{
 @media (max-width: 650px) {
 
   #map iframe{
-    width: 450px;
+    width: 350px;
   }
 
   .campus{
@@ -519,7 +525,20 @@ main{
 
 }
 
-@media (max-width: 350px) {
+@media (max-width: 390px) {
+
+  #map iframe{
+   display: none;
+  }
+  
+  .map-section {
+    display: block;
+    
+  }
+
+  .info-card{
+    position: relative;
+  }
 
   .navbar-list {
     left: 0;
